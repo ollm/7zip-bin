@@ -3,7 +3,7 @@
 const path = require("path")
 
 function getPath() {
-  if (process.env.USE_SYSTEM_7ZA === "true") {
+  if (process.env.USE_SYSTEM_7Z === "true") {
     return "7zz"
   }
 
@@ -18,5 +18,5 @@ function getPath() {
   }
 }
 
-exports.path7za = getPath()
+exports.path7z = getPath()
 exports.path7x = path.join(__dirname, "7x.sh")
