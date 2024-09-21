@@ -1,20 +1,32 @@
 {
   "name": "7zip-bin",
   "description": "7-Zip precompiled binaries",
-  "version": "5.2.0",
+  "version": "6.0.0",
   "files": [
     "*.js",
     "7x.sh",
     "index.d.ts",
-    "linux",
-    "mac",
-    "win"
+    "linux/arm/7zz",
+    "linux/arm/7zzs",
+    "linux/arm64/7zz",
+    "linux/arm64/7zzs",
+    "linux/ia32/7zz",
+    "linux/ia32/7zzs",
+    "linux/x64/7zz",
+    "linux/x64/7zzs",
+    "mac/arm64/7zz",
+    "mac/x64/7zz",
+    "win/arm64/7zr.exe",
+    "win/ia32/7zr.exe",
+    "win/x64/7zr.exe"
   ],
   "license": "MIT",
   "repository": "develar/7zip-bin",
   "keywords": [
     "7zip",
     "7z",
-    "7za"
+    "7zz",
+    "7zzs",
+    "7zr"
   ]
 }

@@ -2,6 +2,8 @@
 Current version: 24.08
 Downloaded from https://www.7-zip.org/download.html
 
+Use `USE_SYSTEM_7Z` to use system 7zz instead of binaries in repo.
+
 Flags:
 ```
 win/arm64/7zr.exe -h
