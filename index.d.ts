@@ -1,5 +1,5 @@
 /**
- * Path to 7zz (mac/linux) and 7zr.exe (win)
+ * Path to 7zz (mac/linux) and 7za.exe (win)
  * Env var available: `USE_SYSTEM_7Z` instead of included binaries
  */
 export const path7z: string
