@@ -7,7 +7,7 @@ Downloaded from https://github.com/ip7z/7zip/releases
 ``` js
 
 const path7z = require('7zip-bin').path7z;
-const path7zzs = require('7zip-bin').path7zzs; // Get the 7zzs binary instead of 7zz (Only for Linux)
+const path7zzs = require('7zip-bin').path7zzs; // Get 7zzs binary instead of 7zz (Only for Linux)
 const path7x = require('7zip-bin').path7x;
 
 ```
