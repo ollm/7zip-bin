@@ -1,12 +1,8 @@
-7-Zip precompiled binaries.
-
-Current version: 24.09
+# 7-Zip precompiled binaries
+### Current version `24.09`
 Downloaded from https://github.com/ip7z/7zip/releases
 
-Use `USE_SYSTEM_7Z` to use system 7za instead of binaries in repo.
-Use `SZ_COMPRESSION_LEVEL` for setting compression level in 7x.sh
-
-# Get paths
+#### Get paths
 
 ``` js
 
@@ -16,10 +12,11 @@ const path7x = require('7zip-bin').path7x;
 
 ```
 
-Flags:
-```
-mac/arm64/7zz -h                                                                    update-7zip
+- Use `USE_SYSTEM_7Z` to use system 7za instead of binaries in repo.
+- Use `SZ_COMPRESSION_LEVEL` for setting compression level in 7x.sh
 
+#### Flags
+```
 7-Zip (z) 24.08 (arm64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-08-11
  64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:12 OPEN_MAX:1048575, ASM
 
