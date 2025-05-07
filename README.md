@@ -1,9 +1,20 @@
 7-Zip precompiled binaries.
-Current version: 24.08
-Downloaded from https://www.7-zip.org/download.html
+
+Current version: 24.09
+Downloaded from https://github.com/ip7z/7zip/releases
 
 Use `USE_SYSTEM_7Z` to use system 7za instead of binaries in repo.
 Use `SZ_COMPRESSION_LEVEL` for setting compression level in 7x.sh
+
+# Get paths
+
+``` js
+
+const path7z = require('7zip-bin').path7z;
+const path7zzs = require('7zip-bin').path7zzs; // Get the 7zzs binary instead of 7zz (Only for Linux)
+const path7x = require('7zip-bin').path7x;
+
+```
 
 Flags:
 ```

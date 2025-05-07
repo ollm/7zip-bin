@@ -1,7 +1,10 @@
 {
   "name": "7zip-bin",
   "description": "7-Zip precompiled binaries",
-  "version": "6.0.0",
+  "version": "24.09.0",
+  "scripts": {
+    "update": "node update.js"
+  },
   "files": [
     "*.js",
     "7x.sh",
@@ -18,5 +21,8 @@
     "7zz",
     "7zzs",
     "7za"
-  ]
+  ],
+  "devDependencies": {
+    "node-7z": "^3.0.0"
+  }
 }
