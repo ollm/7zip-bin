@@ -174,7 +174,7 @@ const errors = [];
 
 	const realese = await findLatestRelease(forceVersion);
 
-	console.log(`${styleText(['bold', 'cyanBright'], 'Updating 7z binaries to:')} ${styleText(['bold', 'bgMagenta'], realese.name)}`);
+	console.log(`${styleText(['bold', 'cyanBright'], 'Updating 7z binaries to:')} ${styleText(['bold', 'magentaBright'], realese.name)}`);
 	console.log('');
 
 	for(const binary of binaries)
@@ -255,6 +255,8 @@ const errors = [];
 
 	if(errors.length)
 		throw new Error(`${styleText(['bold', 'redBright'], 'Errors during download or extraction:')} \n${errors.join('\n')}`);
+	else
+		console.log(`${styleText(['bold', 'greenBright'], 'All binaries updated successfully!')}`);
 
 })();
 
