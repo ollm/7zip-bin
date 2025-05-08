@@ -2,7 +2,7 @@
 ### Current version `24.09`
 Downloaded from https://github.com/ip7z/7zip/releases
 
-#### Get paths
+### Get paths
 
 ``` js
 
@@ -15,8 +15,37 @@ const path7x = require('7zip-bin').path7x;
 - Use `USE_SYSTEM_7Z` to use system 7za instead of binaries in repo.
 - Use `SZ_COMPRESSION_LEVEL` for setting compression level in 7x.sh
 
-#### Flags
+### Run update script
+
+This script can be used to update binaries automatically from their official release on [GitHub](https://github.com/ip7z/7zip/releases)
+
+##### From package itself
+
+``` sh
+
+# To latest version
+npm run update
+
+# To specific version
+export DOWNLOAD_7Z_VERSION=24.09; npm run update
+
 ```
+
+##### As installed dependency
+
+``` sh
+
+# To latest version
+npm explore 7zip-bin -- npm run update
+
+# To specific version
+export DOWNLOAD_7Z_VERSION=24.09; npm explore 7zip-bin -- npm run update
+
+```
+
+### Flags
+
+``` bash
 7-Zip (z) 24.08 (arm64) : Copyright (c) 1999-2024 Igor Pavlov : 2024-08-11
  64-bit arm_v:8.5-A locale=en_US.UTF-8 Threads:12 OPEN_MAX:1048575, ASM
 

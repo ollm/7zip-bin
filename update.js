@@ -25,7 +25,7 @@ if(!fs.existsSync('temporary-7z')) // Temporarily copy the binary to the root of
 const bin7z = p.join(__dirname, 'temporary-7z');
 const bin7zDll = dll ? p.join(__dirname, '7z.dll') : false; // Only for Windows
 
-const forceVersion = ''; // You can set this to force a version, example 24.05
+const forceVersion = process.env.DOWNLOAD_7Z_VERSION || ''; // You can set this to force a version, example 24.09
 
 const binaries = [
 	// Windows x64
