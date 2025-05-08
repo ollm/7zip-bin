@@ -35,10 +35,10 @@ export DOWNLOAD_7Z_VERSION=24.09; npm run update
 
 ``` sh
 
-# To latest version
+# To latest version (node-7z is required)
 npm explore 7zip-bin -- npm run update
 
-# To specific version
+# To specific version (node-7z is required)
 export DOWNLOAD_7Z_VERSION=24.09; npm explore 7zip-bin -- npm run update
 
 ```
